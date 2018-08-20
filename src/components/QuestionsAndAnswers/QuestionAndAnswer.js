@@ -64,6 +64,7 @@ class QuestionAndAnswer extends Component {
     let mappedQuestionsAndAnswers = [];
     Object.values(this.state.questions).map(function (value) {
       mappedQuestionsAndAnswers.push(value);
+      return mappedQuestionsAndAnswers;
     });
     let selectedQuestion;
     selectedQuestion = mappedQuestionsAndAnswers[levelIdx].map((value, key) => {
@@ -78,6 +79,7 @@ class QuestionAndAnswer extends Component {
     let mappedQuestionsAndAnswers = [];
     Object.values(this.state.questions).map(function (value) {
       mappedQuestionsAndAnswers.push(value);
+      return mappedQuestionsAndAnswers;
     });
     const newShareholders = mappedQuestionsAndAnswers[levelIdx][questionIdx].answers.map((value, key) => {
       if (key !== answerIdx) return value;
@@ -97,6 +99,7 @@ class QuestionAndAnswer extends Component {
     let mappedQuestions = [];
     Object.values(this.state.questions).map(function (value) {
       mappedQuestions.push(value);
+      return mappedQuestions;
     });
     let addedQuestion;
     addedQuestion = mappedQuestions[levelIdx].concat([
@@ -118,6 +121,7 @@ class QuestionAndAnswer extends Component {
     let answers = [];
     Object.values(this.state.questions).map(function (value) {
       answers.push(value);
+      return answers;
     });
     answers[levelIdx][idx].answers.push({text: ''});
     this.setState({});
@@ -127,6 +131,7 @@ class QuestionAndAnswer extends Component {
     let mappedQuestions = [];
     Object.values(this.state.questions).map(function (value) {
       mappedQuestions.push(value);
+      return mappedQuestions;
     });
     let removedQuestion;
     removedQuestion = mappedQuestions[levelIdx].filter((s, sidx) => idx !== sidx);
@@ -140,6 +145,7 @@ class QuestionAndAnswer extends Component {
     let mappedQuestions = [];
     Object.values(this.state.questions).map(function (value) {
       mappedQuestions.push(value);
+      return mappedQuestions;
     });
     mappedQuestions[levelIdx][questionIdx].answers = mappedQuestions[levelIdx][questionIdx].answers.filter((s, sidx) => answerIdx !== sidx);
     console.log(mappedQuestions);
@@ -150,9 +156,11 @@ class QuestionAndAnswer extends Component {
     let mappedQuestionsAndAnswers = [];
     Object.values(this.state.json.Questions).map(function (value) {
       mappedQuestionsAndAnswers.push(value);
+      return mappedQuestionsAndAnswers;
     });
     //this.setState({
     this.state.questions = mappedQuestionsAndAnswers[categoryIdx];
+    //questions:mappedQuestionsAndAnswers[categoryIdx]
     //})
   };
 
@@ -162,6 +170,7 @@ class QuestionAndAnswer extends Component {
     let mappedQuestionsAndAnswers = [];
     Object.values(this.state.questions).map(function (value) {
       mappedQuestionsAndAnswers.push(value);
+      return mappedQuestionsAndAnswers;
     });
     return (
       <div className="QuestionAndAnswer">

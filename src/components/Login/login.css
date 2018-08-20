@@ -1,0 +1,13 @@
+
+.LoginContainer{
+    padding: 15px;
+}
+
+.buttonHolder{
+    text-align: center;
+    float: none;
+}
+
+Button{
+    width: 20%;
+}
