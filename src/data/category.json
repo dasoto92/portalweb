@@ -1,0 +1,2260 @@
+{
+  "Questions": {
+
+    "Java": {
+      "Basic":[
+        {
+          "number": "1",
+          "text": "What is method overloading and method overriding?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "2",
+          "text": "What is method hiding in Java?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "3",
+          "text": "Can we override a final method in Java?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "4",
+          "text": "The difference between Abstract class and interface? ",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "5",
+          "text": "Define inner class in Java.",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        }
+      ],
+      "Intermediate":[
+        {
+          "number": "6",
+          "text": "Can we make a class abstract without an abstract method?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "7",
+          "text": "Can we make a class both final and abstract at the same time?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "8",
+          "text": "What is the impact of private constructor?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "9",
+          "text": "What is difference between eager and lazy loading?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        }
+      ],
+      "Advanced":[
+        {
+          "number": "10",
+          "text": "How to Make an Object Immutable in Java? Why Should You Make an Object Immutable?\n",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "11",
+          "text": "How do you share an object between threads? or How to pass an object from one thread to another? ",
+          "extra": {
+            "video": "?",
+            "img": "http://4.bp.blogspot.com/-YKQS_qjXIXU/T40GI_LJlkI/AAAAAAAAAbY/lnLb_u5E8wc/s1600/images3.jpg"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "12",
+          "text": "How do find if your program has a deadlock?",
+          "extra": {
+            "video": "?",
+            "img": "http://4.bp.blogspot.com/-YKQS_qjXIXU/T40GI_LJlkI/AAAAAAAAAbY/lnLb_u5E8wc/s1600/images3.jpg"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "13",
+          "text": "How do you avoid deadlock while coding?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "14",
+          "text": "What is the default method in Java 8 and when do we use it?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "15",
+          "text": "What new features were added in Java 8?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "16",
+          "text": "What is a method reference?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "17",
+          "text": "What is a Lambda Expression and what is it used for?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        }
+      ]
+    },
+    "AngularJS": {
+      "Intermediate":[
+        {
+          "number": "1",
+          "text": "List at least three ways to communicate between modules of your application using core AngularJS functionality.\n",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "2",
+          "text": "Which means of communication between modules of your application are easily testable?.",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "3",
+          "text": "When a scope is terminated, two similar “destroy” events are fired. What are they used for, and why are there two?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "4",
+          "text": "List a few ways to improve performance in an AngularJS app.",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "5",
+          "text": "What are the DOM and the BOM?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "6",
+          "text": "Name and describe the phases of a directive definition function execution, or describe how directives are instantiated.",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "7",
+          "text": "How does the digest phase work?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        }
+      ]
+    },
+    "ReactNative": {
+      "Basic":[
+        {
+          "number": "1",
+          "text": "What is React Native?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "2",
+          "text": "What's the Challenges with React Native?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "3",
+          "text": "Advantages of React Native?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "4",
+          "text": "What is the difference between React and React Native?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "5",
+          "text": "Handling Multiple Platforms?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "6",
+          "text": "Can we use native code alongside react native?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "7",
+          "text": "List some core components of React Native?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "8",
+          "text": "What is the difference between state and props in React Native?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        }
+      ],
+      "Intermediate":[
+        {
+          "number": "9",
+          "text": "What are stateless and stalefull components?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "10",
+          "text": "How do you implement the navigation in React Native?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "11",
+          "text": "What happens during the lifecycle of a React Native component?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "12",
+          "text": "How Virtual DOM works in React Native?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "13",
+          "text": "What is the use of ref in React-Native?.\n",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "14",
+          "text": "Difference between React Native and NativeScript, which one do you prefer and why?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "15",
+          "text": "Differences between Android and IOS?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        }
+      ],
+      "Advanced":[
+        {
+          "number": "16",
+          "text": "Are there any disadvantages to using React Native for mobile development? ",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "17",
+          "text": "What is the difference between using constructor vs getInitialState in React / React Native? ",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "18",
+          "text": "How do you use a feature from a device like camera or bluetooth? steps to config?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "19",
+          "text": "How  is it different from MVC and FLUX?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        }
+      ]
+    },
+    "Ruby": {
+      "Basic":[
+        {
+          "number": "1",
+          "text": "Does Ruby support namespaces?\n",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "2",
+          "text": "How can I invoke a method in Ruby? ",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "3",
+          "text": "What does self mean in Ruby?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "4",
+          "text": "Explain how you define an Instance Variable, Global Variable and Class Variable in Ruby?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "5",
+          "text": "Explain how can you declare a block in Ruby?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "6",
+          "text": "What is Interpolation in Ruby?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "7",
+          "text": "What are levels of method access control for classes in Ruby?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "8",
+          "text": "How would you create getter and setter methods in Ruby?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        }
+      ],
+      "Intermediate":[
+        {
+          "number": "9",
+          "text": "What is yield for?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "10",
+          "text": "How does a symbol differ from a string?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "11",
+          "text": "Does Ruby support multiple inheritance?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "12",
+          "text": "What is the difference between include and extend?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        }
+      ],
+      "Advanced":[
+        {
+          "number": "13",
+          "text": "How ruby support method overloading?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "14",
+          "text": "What is Arel?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "15",
+          "text": "Explain a polymorphic association",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "16",
+          "text": "Explain some of the different componenent of Rails?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "17",
+          "text": "Walk through the flow of a request through Rails",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "18",
+          "text": "What security measures should be used when developing in rails?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        }
+      ]
+    },
+    "CSS": {
+      "Basic":[
+        {
+          "number": "1",
+          "text": "Explain what a class selector is and how it’s used. ",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "2",
+          "text": "What are pseudo classes and what are they used for? ",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "3",
+          "text": "Explain the three main ways to apply CSS styles to a Web page",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "4",
+          "text": "What is grouping and what is it used for?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "5",
+          "text": "What is an ID selector and how is it used?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "6",
+          "text": "What is a Class selector and how does it differ from an ID selector?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "7",
+          "text": "What are child selectors?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "8",
+          "text": "How is the float property implemented in CSS?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "9",
+          "text": "What is the CSS Box Model used for? What are the elements that it includes?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "10",
+          "text": "How to restore the default property value using CSS?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "11",
+          "text": "How are inline and block elements different from each other?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "12",
+          "text": "What is the purpose of the z-index and how is it used?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "13",
+          "text": "Why shouldn’t I use fixed sized fonts?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "14",
+          "text": "Which font names are available on all platforms?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "15",
+          "text": "What are the advantages/disadvantages of using CSS preprocessors? (SASS, Compass, Stylus, LESS)",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        }
+      ]
+    },
+    "Javascript": {
+      "Basic":[
+        {
+          "number": "1",
+          "text": "What is prototype in Javascript?.\n",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "2",
+          "text": "What is the instanceof operator in JavaScript? ",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        }
+      ],
+      "Intermediate":[
+        {
+          "number": "3",
+          "text": "What are Javascript closures? When would you use them?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "4",
+          "text": "How to handle exceptions in JavaScript?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "5",
+          "text": "What is the difference between let and var?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "6",
+          "text": "Explain function hoisting in JavaScript?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        }
+      ],
+      "Advanced":[
+        {
+          "number": "7",
+          "text": "What is Event Delegation in JavaScript?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "8",
+          "text": "What is a promise in Javascript?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "9",
+          "text": "What is Functional Programming?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        }
+      ]
+    },
+    "ReactJS": {
+      "Basic":[
+        {
+          "number": "1",
+          "text": "What is React? How is it different from other JS frameworks?\n",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "2",
+          "text": "What are States and Props in React? ",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "3",
+          "text": "What happens when you call setState?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "4",
+          "text": "What’s the difference between an Element and a Component in React?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "5",
+          "text": "What is virtual DOM in React?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "6",
+          "text": "What are refs in React and why are they important?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "7",
+          "text": "What are keys in React and why are they important?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "8",
+          "text": "What do you understand by JSX? Explain it.",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        }
+      ],
+      "Intermediate":[
+        {
+          "number": "9",
+          "text": "What are the advantages and limitations of React?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "10",
+          "text": "Describe how events are handled in React.",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "11",
+          "text": "What are synthetic events?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "12",
+          "text": "When would you use a Class Component over a Functional Component?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "13",
+          "text": "Difference between Controlled and Uncontrolled components?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "14",
+          "text": "Why redux ? Are there any problems in MVC ?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        }
+      ],
+      "Advanced":[
+        {
+          "number": "15",
+          "text": "How we can share data between components in React?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "16",
+          "text": "What are 'Actions' in Redux?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "17",
+          "text": "What is the role of reducers in Redux?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "18",
+          "text": "What is 'Store' in Redux?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "19",
+          "text": "What are the life cycle methods of a component in React and in which life cycle method we do the service calls (Ajax) to get data?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        }
+      ]
+    },
+    "Angular2": {
+      "Basic":[
+        {
+          "number": "1",
+          "text": "What problem is Angular 2 trying to solve? \n",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "2",
+          "text": "Why are decorators used in Angular 2? ",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "3",
+          "text": "What is root module for Angular 2 and what are its parameters?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "4",
+          "text": "How does angular 2 keep track of two-way data binding?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "5",
+          "text": "What limits the number of two-way binding attributes in Angular 2?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "6",
+          "text": "How is using two-way data binding encouraged in Angular 2?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "7",
+          "text": "What is difference between component and directive in Angular 2? ",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "8",
+          "text": "How can we bind a variable with DOM element in Angular 2?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "9",
+          "text": "What are pipes in Angular 2?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "10",
+          "text": "Can we automate porting Angular 1 code to Angular 2?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "11",
+          "text": "Which Angular 2 directive can be used for internationalization?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "12",
+          "text": "What is Host Decorators in Angular 2?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "13",
+          "text": "What are Observables in Angular2",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        }
+      ]
+    },
+    "Python": {
+      "Basic": [
+        {
+          "number": "1",
+          "text": "What are tuples in Python? How they are different than lists?  \n",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "2",
+          "text": "What are Python's dictionaries? ",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "3",
+          "text": "What is PEP 8?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "4",
+          "text": "How is Python interpreted?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "5",
+          "text": "How is memory managed in Python?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "6",
+          "text": "What are the tools that help to find bugs or perform static analysis? ",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "7",
+          "text": "How are arguments passed by value or by reference? ",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "8",
+          "text": "What is a namespace in Python?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "9",
+          "text": "What is pass in Python? ",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "10",
+          "text": "How can you share global variables across modules?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "11",
+          "text": "What is the difference between deep and shallow copy?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "12",
+          "text": "Explain delegation in Python",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "13",
+          "text": "What is the function of “self”?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "14",
+          "text": "How is global value mutation used for thread-safety?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "15",
+          "text": "What is the process to run sub-process with pipes that connect both input and output?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        },
+        {
+          "number": "16",
+          "text": "Explain how Python does Compile-time and Run-time code checking?",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers":[
+            {
+              "text": "respuesta1, pregunta 1"
+            },
+            {
+              "text":"respuesta2, pregunta 1"
+            }
+          ]
+        }
+      ]
+    },
+    "Test": {
+      "Basic": [
+          {
+            "number": "1",
+            "text": "Tell me something.\n",
+            "extra": {
+              "video": "?",
+              "img": "?"
+            },
+            "answers":[
+              {
+                "text": "respuesta1, pregunta 1"
+              },
+              {
+                "text":"respuesta2, pregunta 1"
+              }
+            ]
+          },
+          {
+            "number": "2",
+            "text": "Tell me something.Please",
+            "extra": {
+              "video": "?",
+              "img": "?"
+            },
+            "answers":[
+              {
+                "text": "respuesta1, pregunta 1"
+              },
+              {
+                "text":"respuesta2, pregunta 1"
+              }
+            ]
+          }
+      ],
+      "Intermediate": [
+          {
+            "number": "1",
+            "text": "Tell me something.\n",
+            "extra": {
+              "video": "?",
+              "img": "?"
+            },
+            "answers":[
+              {
+                "text": "respuesta1, pregunta 1"
+              },
+              {
+                "text":"respuesta2, pregunta 1"
+              }
+            ]
+          },
+          {
+            "number": "2",
+            "text": "Tell me something.Please",
+            "extra": {
+              "video": "?",
+              "img": "?"
+            },
+            "answers":[
+              {
+                "text": "respuesta1, pregunta 1"
+              },
+              {
+                "text":"respuesta2, pregunta 1"
+              }
+            ]
+          }
+      ]
+    }
+
+  }
+}

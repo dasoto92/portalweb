@@ -1,0 +1,27 @@
+{
+  "name": "portal-web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "ajv": "^6.5.2",
+    "jquery": "^3.3.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-modal": "^3.4.5",
+    "react-modal-video": "^1.2.0",
+    "react-player": "^1.6.4",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-tabs": "^2.2.2",
+    "reactstrap": "^6.4.0",
+    "redux": "^4.0.0",
+    "write-json-file": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

@@ -1,0 +1,68 @@
+.Header {
+  position: static;
+  background-color: #222;
+  height: 110px;
+  padding: 20px;
+  color: white;
+  background-color: rgb(47,45,70);
+  left: 0;
+  top:0;
+  width: 100%;
+}
+
+.Logo img {
+  animation: App-logo-spin infinite 20s linear;
+  height: 60px;
+}
+
+.Content{
+  height: auto;
+  width: 90%;
+  padding-top: 2%;
+  margin-left: -10px;
+  position: fixed;
+}
+
+.Footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(47,45,70);
+  color: white;
+  text-align: center;
+  height: 70px;
+  padding: 15px;
+}
+
+.TableScroll {
+  overflow-y: auto;
+  height: 90%;
+  width: 90%;
+  position: absolute;
+}
+
+.Body {
+  overflow-y: auto;
+  height: 85%;
+  width: 100%;
+  position: absolute;
+}
+
+.radio-label {
+   display: inline-block;
+    vertical-align: top;
+    margin-right: 8%;
+}
+
+input[type=text] {
+    width: 20%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-bottom: 1%;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 90%;
+}
