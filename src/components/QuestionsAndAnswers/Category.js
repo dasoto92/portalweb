@@ -13,51 +13,24 @@ class Category extends Component {
       questions: [],
       categories: this.props.categories,
       json: [],
-      categoryIndex: 0
+      categoryIdx: 0
     };
   }
 
   onClick(key) {
     this.setState({
-      categoryIndex: key
-    })
-  }
-/*
-  componentWillMount(){
-    console.log("will mount");
-  }
-  componentDidMount(){
-    console.log("did mount");
-  }
-
-  componentWillReceiveProps(nextProps){
-    console.log("receive props:  ", nextProps);
-  }
-
-  shouldComponentUpdate(nextProps, nextState){
-    console.log("should update" , nextProps, nextState);
-    return true;
-  }
-
-  componentWillUpdate(nextProps, nextState){
-    console.log("will update" , nextProps, nextState);
-  }
-
-  componentDidUpdate(currentProps, currentState){
-    console.log("did update  aasd" , this.state.categoryIndex);
-    //console.log("did update" , prevProps, prevState);
-  }
-*/
-
-  onStateChange(arrayQuestions) {
-    console.log(this.state.name);
-    this.setState({
-      questions: arrayQuestions,
-      name: this.state.name + 1
+      categoryIdx: key
     });
   }
 
-  handleChange(key) {
+  shouldComponentUpdate(nextProps, nextState) {
+    return nextState.categoryIdx !== this.state.categoryIdx;
+  }
+
+  componentWillUpdate(nextProps, nextState) {
+    this.setState({
+      categoryIdx: nextState.categoryIdx
+    })
   }
 
   render() {
@@ -80,7 +53,7 @@ class Category extends Component {
             </div>
           </div>
           <div className="col-9">
-            <QuestionAndAnswer json={this.props.categories} categoryIndex={this.state.categoryIndex}/>
+            <QuestionAndAnswer json={this.props.categories} categoryIdx={this.state.categoryIdx}/>
           </div>
         </div>
       </div>
@@ -92,7 +65,7 @@ Category.propTypes = {
   categories: PropTypes.object.isRequired,
   questions: PropTypes.array,
   json: PropTypes.any,
-  categoryIndex: PropTypes.number
+  categoryIdx: PropTypes.number
 };
 
 export default Category;
