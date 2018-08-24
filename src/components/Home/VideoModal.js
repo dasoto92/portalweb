@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-//import ReactDOM from 'react-dom';
 import ModalVideo from 'react-modal-video';
 
 //Css

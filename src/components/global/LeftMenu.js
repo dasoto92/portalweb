@@ -1,4 +1,3 @@
-// Dependencies
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
@@ -6,11 +5,17 @@ import PropTypes from 'prop-types';
 import './css/bootstrap.css';
 import './css/LeftMenu.css';
 
+class LeftMenu extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      index: this.props.index
+    }
+  }
 
-class Right_Menu extends Component {
-  static propTypes = {
-    items: PropTypes.array.isRequired
-  };
+  componentDidMount() {
+    document.getElementById(this.state.index).className = "active";
+  }
 
   render() {
     const {items} = this.props;
@@ -18,13 +23,17 @@ class Right_Menu extends Component {
       <div className="container">
         <div className="vertical-menu">
           {items && items.map((item, key) =>
-            <a key={key} href={item.url}>{item.title}</a>
+            <a key={key} id={key} href={item.url}>{item.title}</a>
           )}
-          {/*<a href="index.js" className="active">Interviews</a>*/}
         </div>
       </div>
     );
   }
 }
 
-export default Right_Menu;
+LeftMenu.propTypes = {
+  items: PropTypes.array.isRequired,
+  index: PropTypes.number
+};
+
+export default LeftMenu;

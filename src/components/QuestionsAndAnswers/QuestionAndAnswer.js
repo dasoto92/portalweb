@@ -1,4 +1,3 @@
-// Dependencies
 import React, {Component} from 'react';
 import {Button, Form, FormGroup} from 'reactstrap';
 
@@ -158,15 +157,75 @@ class QuestionAndAnswer extends Component {
       mappedQuestionsAndAnswers.push(value);
       return mappedQuestionsAndAnswers;
     });
-    //this.setState({
-    this.state.questions = mappedQuestionsAndAnswers[categoryIdx];
-    //questions:mappedQuestionsAndAnswers[categoryIdx]
-    //})
+
   };
 
-  //componentDidMount();
+
+  cosmponentDidMount(){
+    let mappedQuestionsAndAnswers = [];
+    Object.values(this.state.json.Questions).map(function (value) {
+      mappedQuestionsAndAnswers.push(value);
+      return mappedQuestionsAndAnswers;
+    });
+    this.setState({
+      questions:mappedQuestionsAndAnswers[0],
+      categoryIndex:this.props.categoryIndex
+    })
+  }
+
+  //component()
+  //shouldComponentUpdate
+  //componentWillUpdate
+
+  comsponentWillReceiveProps() {
+
+    let mappedQuestionsAndAnswers = [];
+    Object.values(this.state.json.Questions).map(function (value) {
+      mappedQuestionsAndAnswers.push(value);
+      return mappedQuestionsAndAnswers;
+    });
+    //console.log(this.state.categoryIndex);
+    this.setState({
+      questions:mappedQuestionsAndAnswers[this.props.categoryIndex]
+    })
+
+  }
+
+
+  componentWillMount(){
+    console.log("will mount");
+  }
+  componentDidMount(){
+    console.log("did mount");
+  }
+
+  componentWillReceiveProps(nextProps){
+    console.log("receive props:  ", nextProps);
+  }
+
+  shouldComponentUpdate(nextProps, nextState){
+    console.log("should update" , nextProps, nextState);
+    return true;
+  }
+
+  componentWillUpdate(nextProps, nextState){
+    console.log("will update" , nextProps, nextState);
+
+  }
+
+  componentDidUpdate(currentProps, currentState){
+    console.log("did update" , this.state.categoryIndex);
+    //console.log("did update" , prevProps, prevState);
+  }
+
+
+
+
   render() {
-    this.handleGetQuestions(this.props.categoryIndex);
+   //console.log(this.props.categoryIndex);
+
+   //console.log(this.state.categoryIndex);
+    //this.handleGetQuestions(this.props.categoryIndex);
     let mappedQuestionsAndAnswers = [];
     Object.values(this.state.questions).map(function (value) {
       mappedQuestionsAndAnswers.push(value);
@@ -201,9 +260,6 @@ class QuestionAndAnswer extends Component {
                     </div>
                   </div>
                   <br/>
-                  {
-                    //console.log(value.answers)
-                  }
                   {value.answers.map((value, key) => (
                     <div className="row" key={key} style={{
                       'marginLeft': '15px',

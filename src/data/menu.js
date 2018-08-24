@@ -5,7 +5,7 @@ export default [
   },
   {
     title: 'Questions & Answers',
-    url: '/questionsandanswers'
+    url: '/questions-and-answers'
   },
   {
     title: 'Reports',

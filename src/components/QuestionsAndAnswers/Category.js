@@ -1,4 +1,3 @@
-// Dependencies
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import '../global/css/bootstrap.css';
@@ -19,11 +18,36 @@ class Category extends Component {
   }
 
   onClick(key) {
-    //this.getQuestions(key);
     this.setState({
       categoryIndex: key
     })
   }
+/*
+  componentWillMount(){
+    console.log("will mount");
+  }
+  componentDidMount(){
+    console.log("did mount");
+  }
+
+  componentWillReceiveProps(nextProps){
+    console.log("receive props:  ", nextProps);
+  }
+
+  shouldComponentUpdate(nextProps, nextState){
+    console.log("should update" , nextProps, nextState);
+    return true;
+  }
+
+  componentWillUpdate(nextProps, nextState){
+    console.log("will update" , nextProps, nextState);
+  }
+
+  componentDidUpdate(currentProps, currentState){
+    console.log("did update  aasd" , this.state.categoryIndex);
+    //console.log("did update" , prevProps, prevState);
+  }
+*/
 
   onStateChange(arrayQuestions) {
     console.log(this.state.name);

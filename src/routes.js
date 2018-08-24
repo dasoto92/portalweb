@@ -1,4 +1,3 @@
-// Dependencies
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
@@ -12,7 +11,7 @@ import Login from './components/Login';
 const AppRoutes = () =>
   <App>
     <Switch>
-      <Route exact path="/questionsandanswers" component={QuestionsAndAnswers} />
+      <Route exact path="/questions-and-answers" component={QuestionsAndAnswers} />
       <Route exact path="/reports" component={Reports} />
       <Route exact path="/" component={Home} />
       <Route exact path="/login" component={Login} />

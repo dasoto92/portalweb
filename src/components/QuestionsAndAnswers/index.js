@@ -1,4 +1,3 @@
-// Dependencies
 import React, { Component } from 'react';
 
 //CSS
@@ -7,10 +6,10 @@ import '../global/css/General.css';
 // Component
 import LeftMenu from '../global/LeftMenu'
 import Category from './Category'
+
 // Data
 import items from '../../data/menu';
 import categories from '../../data/category.json';
-//import questions from '../../data/questions.json';
 
 class QuestionsAndAnswers extends Component {
 
@@ -18,7 +17,7 @@ class QuestionsAndAnswers extends Component {
     return(
       <div className="Content Body">
         <div className="row Body">
-          <div className="col-3"><LeftMenu items={items} /></div>
+          <div className="col-3"><LeftMenu items={items} index={1} /></div>
           <div className="col-9"><Category categories={categories} /></div>        
         </div>
       </div>
