@@ -23,6 +23,12 @@
   position: fixed;
 }
 
+.collapsibleTitle{
+  background-color: white;
+  margin-left: 100px;
+}
+
+
 .Footer {
   position: fixed;
   left: 0;

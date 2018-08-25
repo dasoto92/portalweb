@@ -160,7 +160,13 @@ class QuestionAndAnswer extends Component {
     });
 
   };
+/*
+  saveJSON(){
+    let dir="https://interviewbotstorage.file.core.windows.net/interviews?sv=2017-11-09&ss=bfqt&srt=sco&sp=rwdlacup&se=2018-12-06T10:06:04Z&st=2018-08-25T02:06:04Z&spr=https&sig=5AGJ1NaX6JM97J167OUqXqWme3k1cLyvS%2Fu5wUqfKo4%3D&restype=directory&comp=list";
+    console.log(axios.get(dir));
 
+  }
+*/
   componentDidMount() {
     let mappedQuestionsAndAnswers = [];
     Object.values(this.state.json.Questions).map(function (value) {
@@ -204,6 +210,7 @@ class QuestionAndAnswer extends Component {
     });
     return (
       <div className="QuestionAndAnswer">
+        <Button onClick={this.saveJSON}> test </Button>
         <Form onSubmit={this.handleSubmit}>
           <h4>Basic</h4>
           {
@@ -286,6 +293,7 @@ class QuestionAndAnswer extends Component {
             'margin': '5px'
           }}>Save</Button>
         </Form>
+
       </div>
     );
   }
