@@ -25,23 +25,13 @@ class Home extends Component {
     }
   }
 
-
-  handleLogout = () => {
-    localStorage.clear();
-    this.props.history.push("/login");
-  };
-
   render() {
     return (
       <div>
-        <div className={"row"}>
-          <button onClick={this.handleLogout} className={"logoutBtn"}>Logout</button>
-        </div>
         <div className="Content Body">
           <div className="row Body">
             <div className="col-3"><LeftMenu items={items} index={0}/></div>
             <div className="col-8">
-              {/*<input type="text" name="search" placeholder="Search.."></input>*/}
               <Table/>
             </div>
           </div>

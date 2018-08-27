@@ -125,7 +125,7 @@ class Login extends Component {
           />
           <br/>
           <div className="buttonHolder center-block">
-            <Button onClick={this.handleSubmit} disabled={isDisabled}>Sign up</Button>
+            <Button onClick={this.handleSubmit} disabled={isDisabled}>Sign In</Button>
           </div>
         </Form>
       </div>

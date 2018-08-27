@@ -16,7 +16,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Header propes={this}/>
+        <Header header={children}/>
         <Content body={children}/>
         <Footer/>
       </div>
