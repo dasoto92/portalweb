@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Modal from 'react-modal';
+import {Player} from 'video-react';
 
 //Css
 import '../global/css/modal-video.min.css';
@@ -43,6 +44,9 @@ class Video_Modal extends Component {
   }
 
   render() {
+    let url = "https://interviewbotstorage.file.core.windows.net/interviews/pcass78@gmail.com/Test_7_4_2018_23_0_26/interview.webm?sv=2017-11-09&ss=bfqt&srt=sco&sp=rwdlacup&se=2018-12-06T10:06:04Z&st=2018-08-25T02:06:04Z&spr=https&sig=5AGJ1NaX6JM97J167OUqXqWme3k1cLyvS%2Fu5wUqfKo4%3D";
+    let pdfURL="https://interviewbotstorage.file.core.windows.net/interviews/pcass78@gmail.com/Test_7_4_2018_23_20_18/interview.pdf?sv=2017-11-09&ss=bfqt&srt=sco&sp=rwdlacup&se=2018-12-06T10:06:04Z&st=2018-08-25T02:06:04Z&spr=https&sig=5AGJ1NaX6JM97J167OUqXqWme3k1cLyvS%2Fu5wUqfKo4%3D";
+
     return (
       <div>
         <a onClick={this.openModal} href="\#">Doc</a>
@@ -53,7 +57,6 @@ class Video_Modal extends Component {
           style={customStyles}
           contentLabel="Example Modal"
         >
-
           <h2 ref={subtitle => this.subtitle = subtitle}>Hello</h2>
           <button onClick={this.closeModal}>X</button>
         </Modal>

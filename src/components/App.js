@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
 //components
@@ -12,13 +12,13 @@ class App extends Component {
   };
 
   render() {
-    const { children } = this.props;
+    const {children} = this.props;
 
     return (
       <div className="App">
-        <Header />
+        <Header propes={this}/>
         <Content body={children}/>
-        <Footer />
+        <Footer/>
       </div>
     );
   }

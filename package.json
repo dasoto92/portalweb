@@ -5,6 +5,7 @@
   "dependencies": {
     "ajv": "^6.5.2",
     "axios": "^0.18.0",
+    "azure-storage": "^2.10.1",
     "chart.js": "^2.7.2",
     "graceful-fs-extra": "^2.0.0",
     "jquery": "^3.3.1",
@@ -25,6 +26,7 @@
     "react-xml-parser": "^1.0.7",
     "reactstrap": "^6.4.0",
     "redux": "^4.0.0",
+    "video-react": "^0.13.0",
     "write-json-file": "^2.3.0"
   },
   "scripts": {

@@ -11,6 +11,17 @@ import LeftMenu from '../global/LeftMenu'
 import items from '../../data/menu';
 
 class Reports extends Component {
+
+  constructor(props){
+    super(props)
+  }
+
+  componentDidMount() {
+    if (localStorage.length < 1) {
+      this.props.history.push("/login");
+    }
+  }
+
   render() {
     let data =
       [

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Button, Form, FormGroup} from 'reactstrap';
+import Azure from 'azure-storage';
 
 //CSS
 import '../global/css/General.css';
@@ -7,6 +8,10 @@ import '../global/css/bootstrap.css';
 import PropTypes from "prop-types";
 
 // Component
+const Settings = {
+  "API_AUTH_ENDPOINTSTORAGE": "utninternship",
+  "SUBSCRIPTION_KEYSTORAGE": "h++vyiOsvkR1AYDwC8z8xG1yamdzEYKdG+SHWLLSQGdG7+SWKOHkRQ6FjpQOAmBeRUNi0pz+aTaCcBZz"
+};
 
 class QuestionAndAnswer extends Component {
   constructor(props) {
@@ -152,21 +157,6 @@ class QuestionAndAnswer extends Component {
     this.setState({});
   };
 
-  handleGetQuestions = (categoryIdx) => {
-    let mappedQuestionsAndAnswers = [];
-    Object.values(this.state.json.Questions).map(function (value) {
-      mappedQuestionsAndAnswers.push(value);
-      return mappedQuestionsAndAnswers;
-    });
-
-  };
-/*
-  saveJSON(){
-    let dir="https://interviewbotstorage.file.core.windows.net/interviews?sv=2017-11-09&ss=bfqt&srt=sco&sp=rwdlacup&se=2018-12-06T10:06:04Z&st=2018-08-25T02:06:04Z&spr=https&sig=5AGJ1NaX6JM97J167OUqXqWme3k1cLyvS%2Fu5wUqfKo4%3D&restype=directory&comp=list";
-    console.log(axios.get(dir));
-
-  }
-*/
   componentDidMount() {
     let mappedQuestionsAndAnswers = [];
     Object.values(this.state.json.Questions).map(function (value) {
@@ -202,6 +192,33 @@ class QuestionAndAnswer extends Component {
     //console.log("did update" , prevProps, prevState);
   }
 
+  createAzureFile() {
+    let fileService = Azure.createFileService("DefaultEndpointsProtocol=https;AccountName=utninternship;AccountKey=2xamaeMMLaevFI3u+6vHKxKlfwbl2r9PucTOoeb48I6/31FCuQlzYqxHEyaPiYN7NjEm26i871gIuPlChDYrWA==;EndpointSuffix=core.windows.net");
+    //let fileService = Azure.createFileService("");
+    let text = [{"key":"asdasd"}];
+
+    fileService.createFileFromStream( 'prueba', '', 'taskfiles.json', text,text.length, function(error, result, response) {
+      if (!error) {
+        console.log(response, result);
+      }else{
+        console.log("ERROR:", error);
+      }
+    });
+
+    /*
+    const streams = new Uint8Array(file.output('arraybuffer'));
+    const fileStream = new stream.Readable();
+    fileStream.push(streams);
+    fileStream.push(null);
+    fileService.createFileFromStream(this.shared, this.directory + '/' + this.fileName, 'interview.pdf', fileStream, streams.length, function (error, result, response) {
+      if (!error) {
+        console.log('file uploaded');
+      }
+    });
+*/
+  }
+
+
   render() {
     let mappedQuestionsAndAnswers = [];
     Object.values(this.state.questions).map(function (value) {
@@ -210,7 +227,7 @@ class QuestionAndAnswer extends Component {
     });
     return (
       <div className="QuestionAndAnswer">
-        <Button onClick={this.saveJSON}> test </Button>
+        <Button onClick={this.createAzureFile}> test </Button>
         <Form onSubmit={this.handleSubmit}>
           <h4>Basic</h4>
           {
@@ -218,7 +235,9 @@ class QuestionAndAnswer extends Component {
               values.map((value, idx) => (
                 <FormGroup key={idx + 100}>
                   <div className="row">
+                    <p>{idx + 1}</p>
                     <div className="col-8">
+
                       <input
                         placeholder={`Question #${idx + 1}`}
                         value={value.text}

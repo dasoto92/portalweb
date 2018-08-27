@@ -72,3 +72,7 @@ input[type=text] {
 input[type=text]:focus {
     width: 90%;
 }
+
+.logoutBtn{
+  margin-left: 85%;
+}

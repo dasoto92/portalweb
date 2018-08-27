@@ -29,7 +29,7 @@ class Table extends Component {
   }
 
   componentDidMount() {
-    console.log("asda");
+  /*  console.log("asda");
     let XMLParser = require('react-xml-parser');
     let dir = "https://interviewbotstorage.file.core.windows.net/interviews?sv=2017-11-09&ss=bfqt&srt=sco&sp=rwdlacup&se=2018-12-06T10:06:04Z&st=2018-08-25T02:06:04Z&spr=https&sig=5AGJ1NaX6JM97J167OUqXqWme3k1cLyvS%2Fu5wUqfKo4%3D&restype=directory&comp=list";
     let baseDir = "https://interviewbotstorage.file.core.windows.net/interviews";
@@ -68,7 +68,7 @@ class Table extends Component {
                           <td>{text[0]}</td>
                           <td>{text[2]+" - "+text[1]+" - "+text[3]}</td>
                           <td><TextModal/></td>
-                          <td><a href={url}>eraasd</a></td>
+                          <td><VideoModal/></td>
                         </tr>)
                     })
                   }
@@ -85,6 +85,7 @@ class Table extends Component {
       });
     });
     console.log("first");
+    */
   }
 
   componentWillMount() {

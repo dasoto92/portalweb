@@ -13,12 +13,18 @@ import categories from '../../data/category.json';
 
 class QuestionsAndAnswers extends Component {
 
+  componentDidMount() {
+    if (localStorage.length < 1) {
+      this.props.history.push("/login");
+    }
+  }
+
   render(){
     return(
       <div className="Content Body">
         <div className="row Body">
           <div className="col-3"><LeftMenu items={items} index={1} /></div>
-          <div className="col-9"><Category categories={categories} /></div>        
+          <div className="col-9"><Category categories={categories} /></div>
         </div>
       </div>
     );

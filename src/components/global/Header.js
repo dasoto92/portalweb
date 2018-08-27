@@ -3,6 +3,7 @@ import logo from './images/avantica-logo-white.png';
 import './css/General.css';
 
 class Header extends Component {
+
   render() {
     return (
       <div className="Header">
