@@ -5,10 +5,6 @@ import {withRouter} from "react-router-dom";
 
 class Header extends Component {
 
-  constructor(props) {
-    super(props);
-  }
-
   handleLogout = () => {
     localStorage.clear();
     this.props.history.push("/login");
