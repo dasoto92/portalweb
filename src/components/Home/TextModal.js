@@ -49,7 +49,7 @@ class Video_Modal extends Component {
 
     return (
       <div>
-        <a onClick={this.openModal} href="\#">Doc</a>
+        <a onClick={this.openModal} href="\#">Document (.pdf)</a>
         <Modal
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}

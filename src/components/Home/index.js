@@ -40,9 +40,9 @@ class Home extends Component {
         <div className="Content Body">
           <div className="row Body">
             <div className="col-3"><LeftMenu items={items} index={0}/></div>
-            <div className="col-9">
-              <input type="text" name="search" placeholder="Search.."></input>
-              <center><Table/></center>
+            <div className="col-8">
+              {/*<input type="text" name="search" placeholder="Search.."></input>*/}
+              <Table/>
             </div>
           </div>
         </div>

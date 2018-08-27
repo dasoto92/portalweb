@@ -28,7 +28,6 @@
   margin-left: 100px;
 }
 
-
 .Footer {
   position: fixed;
   left: 0;
@@ -50,7 +49,7 @@
 
 .Body {
   overflow-y: auto;
-  height: 85%;
+  height: 88%;
   width: 100%;
   position: absolute;
 }
@@ -75,4 +74,13 @@ input[type=text]:focus {
 
 .logoutBtn{
   margin-left: 85%;
+}
+
+.chart{
+  height: 85%;
+}
+
+.panelH{
+  width: 80%;
+  align-content: center;
 }

@@ -17,7 +17,13 @@ class Category extends Component {
     };
   }
 
+  componentDidMount() {
+    document.getElementById((this.state.categoryIdx+1)*100).className = "active";
+  }
+
   onClick(key) {
+    document.getElementById((this.state.categoryIdx + 1) * 100).className = "";
+    document.getElementById((key + 1) * 100).className = "active";
     this.setState({
       categoryIdx: key
     });
@@ -44,11 +50,9 @@ class Category extends Component {
         <div className="row">
           <div className="col-3">
             <div className="vertical-menu-categories">
-              <a className="active">
-                <center>Categories</center>
-              </a>
+
               {newArray.map((item, key) => {
-                return <a onClick={() => this.onClick(key)} key={key}>{item}</a>
+                return <a onClick={() => this.onClick(key)} id={(key + 1) * 100} key={key}>{item}</a>
               })}
             </div>
           </div>

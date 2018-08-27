@@ -29,7 +29,7 @@ class Table extends Component {
   }
 
   componentDidMount() {
-  /*  console.log("asda");
+    console.log("asda");
     let XMLParser = require('react-xml-parser');
     let dir = "https://interviewbotstorage.file.core.windows.net/interviews?sv=2017-11-09&ss=bfqt&srt=sco&sp=rwdlacup&se=2018-12-06T10:06:04Z&st=2018-08-25T02:06:04Z&spr=https&sig=5AGJ1NaX6JM97J167OUqXqWme3k1cLyvS%2Fu5wUqfKo4%3D&restype=directory&comp=list";
     let baseDir = "https://interviewbotstorage.file.core.windows.net/interviews";
@@ -48,7 +48,8 @@ class Table extends Component {
           fold = fold.getElementsByTagName('Name');
           result[key].children = fold;
           p.push(
-            <Panel header={`Employee Email: ${value.value}`} key={key} expandIcon={() => this.directories}>
+            <Panel header={`Employee Email: ${value.value}`} key={key} expandIcon={() => this.directories }
+                   >
               <div>
                 <table className="table table-hover ">
                   <thead>
@@ -66,7 +67,7 @@ class Table extends Component {
                       return (
                         <tr key={key}>
                           <td>{text[0]}</td>
-                          <td>{text[2]+" - "+text[1]+" - "+text[3]}</td>
+                          <td>{text[2] + " - " + text[1] + " - " + text[3]}</td>
                           <td><TextModal/></td>
                           <td><VideoModal/></td>
                         </tr>)
@@ -85,7 +86,7 @@ class Table extends Component {
       });
     });
     console.log("first");
-    */
+
   }
 
   componentWillMount() {
@@ -173,7 +174,7 @@ class Table extends Component {
       </div>
     );*/
     return (
-      <div style={{margin: 20, width: 700}}>
+      <div className={"panelH"}>
         <Collapse
           accordion={true}
           onChange={this.onChange}

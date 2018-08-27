@@ -227,7 +227,7 @@ class QuestionAndAnswer extends Component {
     });
     return (
       <div className="QuestionAndAnswer">
-        <Button onClick={this.createAzureFile}> test </Button>
+        {/*<Button onClick={this.createAzureFile}> test </Button>*/}
         <Form onSubmit={this.handleSubmit}>
           <h4>Basic</h4>
           {

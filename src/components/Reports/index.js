@@ -12,7 +12,7 @@ import items from '../../data/menu';
 
 class Reports extends Component {
 
-  constructor(props){
+  constructor(props) {
     super(props)
   }
 
@@ -27,10 +27,31 @@ class Reports extends Component {
       [
         {
           label: "Interviews",
-          data: [{x: "Monday", y: 5}, {x: "Tuesday", y: 3}, {x: "Wednesday", y: 8}, {x: "Thursday", y: 1}, {
-            x: "Friday",
-            y: 0
-          }]
+          data: [
+            {x: "Monday", y: 4},
+            {x: "Tuesday", y: 2},
+            {x: "Wednesday", y: 6},
+            {x: "Thursday", y: 1},
+            {x: "Friday", y: 0}
+          ]
+        }
+      ];
+
+    let category =
+      [
+        {
+          label: "Languages",
+          data: [
+            {x: "Java", y: 5},
+            {x: "AngularJS", y: 1},
+            {x: "ReactNative", y: 8},
+            {x: "Ruby", y: 2},
+            {x: "CSS", y: 1},
+            {x: "Javascript", y: 4},
+            {x: "ReactJS", y: 4},
+            {x: "Angular2", y: 3},
+            {x: "Python", y: 2}
+          ]
         }
       ];
 
@@ -39,23 +60,29 @@ class Reports extends Component {
         <div className="row Body">
           <div className="col-3"><LeftMenu items={items} index={2}/></div>
           <div className="col-7">
-            <Chart data={data}>
-              <Axis primary type="ordinal"/>
-              <Axis type="linear" min={0} max={0} stacked/>
-              <Series type={Bar}/>
-              <Cursor primary/>
-              <Cursor/>
-              <Tooltip/>
-            </Chart>
-            <Chart data={data}>
-              <Axis primary type="ordinal" position="left"/>
-              <Axis type="linear" stacked position="bottom"/>
-              <Series type={Bar}/>
-              <Cursor primary/>
-              <Cursor/>
-              <Tooltip/>
-            </Chart>
-
+            <h2>Sort by Days</h2>
+            <div className={"chart"}>
+              <Chart data={data}>
+                <Axis primary type="ordinal"/>
+                <Axis type="linear" min={0} max={0} stacked/>
+                <Series type={Bar}/>
+                <Cursor primary/>
+                <Cursor/>
+                <Tooltip/>
+              </Chart>
+            </div>
+            <br/><br/>
+            <h2>Sort by Languages</h2>
+            <div className={"chart"}>
+              <Chart data={category}>
+                <Axis primary type="ordinal" position="left"/>
+                <Axis type="linear" stacked position="bottom"/>
+                <Series type={Bar}/>
+                <Cursor primary/>
+                <Cursor/>
+                <Tooltip/>
+              </Chart>
+            </div>
           </div>
         </div>
       </div>

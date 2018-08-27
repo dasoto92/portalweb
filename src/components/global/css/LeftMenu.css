@@ -1,5 +1,6 @@
 .vertical-menu {
     width: 200px; /* Set a width if you like */
+    position: fixed;
 }
 
 .vertical-menu a {
@@ -22,10 +23,10 @@
 
 .vertical-menu-categories {
     width: 200px; /* Set a width if you like */
+    position: fixed;
 }
 
 .vertical-menu-categories a {
-
     color: black; /* Black text color */
     display: block; /* Make the links appear below each other */
     padding: 12px; /* Add some padding */
@@ -37,6 +38,13 @@
 }
 
 .vertical-menu-categories a.active {
-    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    /*background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    background-color: #17a2b8;
     color: white;
+}
+
+.vertical-menu-categories a.header {
+    background-color: #4e555b; /* Add a green color to the "active/current" link */
+    color: white;
+    text-align: center;
 }
