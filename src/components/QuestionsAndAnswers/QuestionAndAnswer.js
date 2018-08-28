@@ -194,10 +194,9 @@ class QuestionAndAnswer extends Component {
 
   createAzureFile() {
     let fileService = Azure.createFileService("DefaultEndpointsProtocol=https;AccountName=utninternship;AccountKey=2xamaeMMLaevFI3u+6vHKxKlfwbl2r9PucTOoeb48I6/31FCuQlzYqxHEyaPiYN7NjEm26i871gIuPlChDYrWA==;EndpointSuffix=core.windows.net");
-    //let fileService = Azure.createFileService("");
-    let text = [{"key":"asdasd"}];
+    let text = "asdqweqweqwe";
 
-    fileService.createFileFromStream( 'prueba', '', 'taskfiles.json', text,text.length, function(error, result, response) {
+    fileService.createFileFromText( 'prueba', '', 'taskfilesssss.txt', text, function(error, result, response) {
       if (!error) {
         console.log(response, result);
       }else{
@@ -227,7 +226,7 @@ class QuestionAndAnswer extends Component {
     });
     return (
       <div className="QuestionAndAnswer">
-        {/*<Button onClick={this.createAzureFile}> test </Button>*/}
+        <Button onClick={this.createAzureFile}> test </Button>
         <Form onSubmit={this.handleSubmit}>
           <h4>Basic</h4>
           {

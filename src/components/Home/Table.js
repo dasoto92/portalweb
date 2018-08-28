@@ -31,25 +31,33 @@ class Table extends Component {
   componentDidMount() {
     console.log("asda");
     let XMLParser = require('react-xml-parser');
-    let dir = "https://interviewbotstorage.file.core.windows.net/interviews?sv=2017-11-09&ss=bfqt&srt=sco&sp=rwdlacup&se=2018-12-06T10:06:04Z&st=2018-08-25T02:06:04Z&spr=https&sig=5AGJ1NaX6JM97J167OUqXqWme3k1cLyvS%2Fu5wUqfKo4%3D&restype=directory&comp=list";
-    let baseDir = "https://interviewbotstorage.file.core.windows.net/interviews";
-    let lastDir = "?sv=2017-11-09&ss=bfqt&srt=sco&sp=rwdlacup&se=2018-12-06T10:06:04Z&st=2018-08-25T02:06:04Z&spr=https&sig=5AGJ1NaX6JM97J167OUqXqWme3k1cLyvS%2Fu5wUqfKo4%3D&restype=directory&comp=list";
 
-    let url = "https://interviewbotstorage.file.core.windows.net/interviews/pcass78@gmail.com/Test_7_4_2018_23_0_26/interview.webm?sv=2017-11-09&ss=bfqt&srt=sco&sp=rwdlacup&se=2018-12-06T10:06:04Z&st=2018-08-25T02:06:04Z&spr=https&sig=5AGJ1NaX6JM97J167OUqXqWme3k1cLyvS%2Fu5wUqfKo4%3D";
+    //DANIEL AZURE
+    const PATH = "https://utninternship.file.core.windows.net";
+    const FILE_ROOT = "/prueba/interviews";
+    const KEY = "?sv=2017-11-09&ss=bfqt&srt=sco&sp=rwdlacup&se=2018-09-26T07:13:12Z&st=2018-08-26T23:13:12Z&spr=https&sig=mJbFHNEqloNv6pFpsVITK6il%2FtYUb4E7B%2BJAjMkI3iU%3D";
+    const PROPS = "&restype=directory&comp=list";
 
+    const VIDEO = "https://interviewbotstorage.file.core.windows.net/interviews/pcass78%40gmail.com/Test_7_4_2018_23_0_26/interview.webm?sv=2017-11-09&ss=bqtf&srt=sco&sp=rwdlacup&se=2018-08-28T04:30:44Z&sig=gHKIxJzhkwMI59HKxnoQe4oBducvEipeoz78%2BXV89BY%3D"
 
-    let result = axios.get(dir).then(response => {
+    //AVANTICA AZURE
+    //let dir = "https://interviewbotstorage.file.core.windows.net/interviews?sv=2017-11-09&ss=bfqt&srt=sco&sp=rwdlacup&se=2018-12-06T10:06:04Z&st=2018-08-25T02:06:04Z&spr=https&sig=5AGJ1NaX6JM97J167OUqXqWme3k1cLyvS%2Fu5wUqfKo4%3D&restype=directory&comp=list";
+    //let baseDir = "https://interviewbotstorage.file.core.windows.net/interviews";
+    //let lastDir = "?sv=2017-11-09&ss=bfqt&srt=sco&sp=rwdlacup&se=2018-12-06T10:06:04Z&st=2018-08-25T02:06:04Z&spr=https&sig=5AGJ1NaX6JM97J167OUqXqWme3k1cLyvS%2Fu5wUqfKo4%3D&restype=directory&comp=list";
+    //let url = "https://interviewbotstorage.file.core.windows.net/interviews/pcass78@gmail.com/Test_7_4_2018_23_0_26/interview.webm?sv=2017-11-09&ss=bfqt&srt=sco&sp=rwdlacup&se=2018-12-06T10:06:04Z&st=2018-08-25T02:06:04Z&spr=https&sig=5AGJ1NaX6JM97J167OUqXqWme3k1cLyvS%2Fu5wUqfKo4%3D";
+
+    let result = axios.get(PATH + FILE_ROOT + KEY + PROPS).then(response => {
       result = new XMLParser().parseFromString(response.data);
       result = result.getElementsByTagName('Name');
       console.log("first inside");
       result.map((value, key) => {
-        let fold = axios.get(baseDir + "/" + value.value + lastDir).then(response => {
+        let fold = axios.get(PATH + FILE_ROOT + "/" + value.value + KEY + PROPS).then(response => {
           fold = new XMLParser().parseFromString(response.data);
           fold = fold.getElementsByTagName('Name');
           result[key].children = fold;
           p.push(
-            <Panel header={`Employee Email: ${value.value}`} key={key} expandIcon={() => this.directories }
-                   >
+            <Panel header={`Employee Email: ${value.value}`} key={key} expandIcon={() => this.directories}
+            >
               <div>
                 <table className="table table-hover ">
                   <thead>
@@ -122,7 +130,6 @@ class Table extends Component {
           {
             p
           }
-
           {
             console.log("COMPONEEENT - -- - -:", this.state.names[key].children)
           }

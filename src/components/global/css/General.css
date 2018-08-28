@@ -73,7 +73,16 @@ input[type=text]:focus {
 }
 
 .logoutBtn{
-  margin-left: 85%;
+  margin-left: 92%;
+  margin-top: -15px;
+}
+
+.logoutBtn a:link{
+  color:white;
+}
+
+.logoutBtn a:visited{
+  color:white;
 }
 
 .chart{
@@ -84,3 +93,4 @@ input[type=text]:focus {
   width: 80%;
   align-content: center;
 }
+
