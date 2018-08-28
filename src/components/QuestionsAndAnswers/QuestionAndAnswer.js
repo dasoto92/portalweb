@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Button, Form, FormGroup} from 'reactstrap';
 import Azure from 'azure-storage';
+import axios from 'axios';
 
 //CSS
 import '../global/css/General.css';
@@ -77,7 +78,7 @@ class QuestionAndAnswer extends Component {
     });
     mappedQuestionsAndAnswers[levelIdx] = selectedQuestion;
     this.setState({questions: mappedQuestionsAndAnswers});
-    console.log(mappedQuestionsAndAnswers);
+    //console.log("asdasd",mappedQuestionsAndAnswers[levelIdx]);
   };
 
   handleAnswerChange = (questionIdx, answerIdx, levelIdx) => (evt) => {
@@ -217,16 +218,89 @@ class QuestionAndAnswer extends Component {
 */
   }
 
+  pruebaX = (evt) => {
+    let fileService = Azure.createFileService("DefaultEndpointsProtocol=https;AccountName=utninternship;AccountKey=2xamaeMMLaevFI3u+6vHKxKlfwbl2r9PucTOoeb48I6/31FCuQlzYqxHEyaPiYN7NjEm26i871gIuPlChDYrWA==;EndpointSuffix=core.windows.net");
+    /*let json = {
+      "Basic": [
+        {
+          "number": "1",
+          "text": "pregunta 1",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers": [{"text": "respuesta 1"}]
+        },
+        {
+          "number": "2",
+          "text": "pregunta 2",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers": [{"text": "basic answer pregunta 2"}, {"text": "basic answer pregunta 3"}]
+        }
+      ],
+      "Intermediate": [
+        {
+          "number": "1",
+          "text": "Int pregunta 1",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers": [{"text": "Int respuesta 1"}]
+        },
+        {
+          "number": "2",
+          "text": "Int pregunta 2",
+          "extra": {
+            "video": "?",
+            "img": "?"
+          },
+          "answers": [{"text": "int answer pregunta 2"}, {"text": "int answer pregunta 3"}]
+        }
+      ]
+    };*/
+ let json=this.state.json;
+    let newArray = [];
+    Object.keys(json.Questions).forEach(function (key) {
+      newArray.push({"value":key});
+    });
+    json.Questions[newArray[this.state.categoryIndex].value]=this.state.questions;
+
+    let text = JSON.stringify(this.state.json);
+    this.setState({
+      json:json
+    });
+    //console.log(this.state.json);
+
+    fileService.createFileFromText( 'prueba', '', 'prueba.json', text, function(error, result, response) {
+      if (!error) {
+        console.log(text);
+        console.log(response, result);
+      }else{
+        console.log("ERROR:", error);
+      }
+    });
+
+
+  };
+
 
   render() {
     let mappedQuestionsAndAnswers = [];
-    Object.values(this.state.questions).map(function (value) {
+    Object.values(this.state.questions).map(function (value, key) {
       mappedQuestionsAndAnswers.push(value);
       return mappedQuestionsAndAnswers;
     });
+    //console.log(this.state.questions.Basic);
+
+    //console.log(mappedQuestionsAndAnswers);
+
     return (
       <div className="QuestionAndAnswer">
-        <Button onClick={this.createAzureFile}> test </Button>
+        <Button onClick={this.pruebaX}> test </Button>
         <Form onSubmit={this.handleSubmit}>
           <h4>Basic</h4>
           {
@@ -262,6 +336,9 @@ class QuestionAndAnswer extends Component {
                       'marginBottom': '10px'
                     }}>
                       <div className="col-7">
+                        {
+                          /*console.log("IDX: ",idx, "KEY:",key, "LVLIDX",levelIdx)*/
+                        }
                         <input
                           placeholder={`Answer #${key + 1}`}
                           value={value.text}
