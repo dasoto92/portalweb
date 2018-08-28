@@ -50,7 +50,6 @@ class Category extends Component {
         <div className="row">
           <div className="col-3">
             <div className="vertical-menu-categories">
-
               {newArray.map((item, key) => {
                 return <a onClick={() => this.onClick(key)} id={(key + 1) * 100} key={key}>{item}</a>
               })}

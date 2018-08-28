@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom'
 
 //Css
 import './css/bootstrap.css';
@@ -23,7 +24,7 @@ class LeftMenu extends Component {
       <div className="container">
         <div className="vertical-menu">
           {items && items.map((item, key) =>
-            <a key={key} id={key} href={item.url}>{item.title}</a>
+            <Link key={key} id={key} to={item.url}>{item.title}</Link>
           )}
         </div>
       </div>

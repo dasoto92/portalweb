@@ -29,7 +29,7 @@ class Table extends Component {
   }
 
   componentDidMount() {
-
+    dataArray = [];
   }
 
   componentWillMount() {
@@ -123,7 +123,6 @@ class Table extends Component {
   }
 
   render() {
-
     return (
       <div className={"panelH"}>
         <Collapse
