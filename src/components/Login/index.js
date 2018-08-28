@@ -52,7 +52,6 @@ class Login extends Component {
       this.setState({
         credentials: result
       });
-     // console.log(result);
     });
   };
 

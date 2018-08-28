@@ -25,6 +25,14 @@ class Home extends Component {
     }
   }
 
+  static handleLoadTable(){
+    let table = "";
+    if (localStorage.length > 0) {
+      table =<Table/>;
+    }
+    return table;
+  }
+
   render() {
     return (
       <div>
@@ -32,7 +40,7 @@ class Home extends Component {
           <div className="row Body">
             <div className="col-3"><LeftMenu items={items} index={0}/></div>
             <div className="col-8">
-              <Table/>
+              {Home.handleLoadTable()}
             </div>
           </div>
         </div>
