@@ -1,7 +1,7 @@
 .LoginContainer{
     margin-top: 5%;
     padding: 15px;
-    width: 30%;
+    width: 60%;
     margin-left: 35%;
 }
 
@@ -10,6 +10,15 @@
     float: none;
 }
 
-.loginButton{
-    width: 10%;
+.loginBtn{
+    background-color: rgb(47,45,70);
+}
+
+.loginForm{
+    width: 60%;
+}
+
+#loginField{
+    width: 80%;
+    margin-left: 10%;
 }

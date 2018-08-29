@@ -25,7 +25,6 @@ class QuestionsAndAnswers extends Component {
     if (localStorage.length < 1) {
       this.props.history.push("/login");
     } else {
-      //console.log("DID MOUNT PRUEBA");
       this.getDataFromAzure();
     }
   }

@@ -97,4 +97,44 @@ input[type=text]:focus {
 .saveData{
   margin-left: 42%;
   position: fixed;
+  color: rgb(47,45,70);
+}
+
+.saveData Button{
+    background-color: rgb(47,45,70);
+}
+
+.newAnswer{
+    background-color: rgb(47,45,70);
+    color:white;
+}
+
+.formQuestions{
+  width: 85%;
+}
+
+.levelD{
+  width: 100px;
+  margin-left: -2%;
+  margin-bottom: 15px;
+  color: #127d8e;
+ }
+
+.levelMid{
+  width: 100px;
+  margin-left: -2%;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: #127d8e;
+}
+
+.addQuestion{
+    color: #17a2b8;
+}
+
+.questionNumber{
+    margin-top: 7px;
+    margin-right: -5px;
+    font-weight: bold;
+    color: rgb(47,45,70);
 }

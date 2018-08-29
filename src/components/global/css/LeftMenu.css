@@ -16,7 +16,7 @@
 }
 
 .vertical-menu a.active {
-    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    background-color: rgb(47,45,70); /* Add a green color to the "active/current" link */
     color: white;
 }
 

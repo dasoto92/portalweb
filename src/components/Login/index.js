@@ -115,6 +115,7 @@ class Login extends Component {
           <Input
             className={shouldMarkError('username') ? "error" : ""}
             type="text/email"
+            id={"loginField"}
             placeholder="Enter username"
             value={this.state.username}
             onChange={this.handleUsernameChange}
@@ -123,6 +124,7 @@ class Login extends Component {
           <br/>
           <Input
             className={shouldMarkError('password') ? "error" : ""}
+            id={"loginField"}
             type="password"
             placeholder="Enter password"
             value={this.state.password}
@@ -131,7 +133,7 @@ class Login extends Component {
           />
           <br/>
           <div className="buttonHolder center-block">
-            <Button onClick={this.handleSubmit} disabled={isDisabled}>Sign In</Button>
+            <Button onClick={this.handleSubmit} className={"loginBtn"} disabled={isDisabled}>Sign In</Button>
           </div>
         </Form>
       </div>

@@ -209,6 +209,20 @@ class QuestionAndAnswer extends Component {
     });
   };
 
+  static levelDiff(levelIdx, idx) {
+    let level = ("");
+    if (levelIdx === 0 && idx === 0) {
+      level = (<h4 className={"levelD"}>Basic</h4>)
+    }
+    if (levelIdx === 1 && idx === 0) {
+      level = (<h4 className={"levelMid"}>Intermediate</h4>)
+    }
+    if (levelIdx === 2 && idx === 0) {
+      level = (<h4 className={"levelMid"}>Advanced</h4>)
+    }
+    return level;
+  }
+
   render() {
     let mappedQuestionsAndAnswers = [];
     Object.values(this.state.questions).map(function (value, key) {
@@ -217,16 +231,17 @@ class QuestionAndAnswer extends Component {
     });
     return (
       <div className="QuestionAndAnswer">
-        <Button className={"saveData btn btn-info"} onClick={this.saveJSON}> Save </Button>
-        <Form onSubmit={this.handleSubmit}>
-          <h4>Basic</h4>
+        <div className={"saveData"}><Button  onClick={this.saveJSON}> Save </Button></div>
+
+        <Form className={"formQuestions"} onSubmit={this.handleSubmit}>
           {
             mappedQuestionsAndAnswers.map((values, levelIdx) => (
               values.map((value, idx) => (
                 <FormGroup key={idx + 100}>
+                  {QuestionAndAnswer.levelDiff(levelIdx,idx)}
                   <div className="row">
-                    <p>{idx + 1}</p>
-                    <div className="col-8">
+                    <p className={"questionNumber"}>{idx + 1}</p>
+                    <div className="col-10">
                       <input
                         placeholder={`Question #${idx + 1}`}
                         value={value.text}
@@ -235,14 +250,15 @@ class QuestionAndAnswer extends Component {
                         className="form-control input-lg"
                       />
                     </div>
-                    <div className="col-3">
-                      <Button type="button"
+                    <div className="col-1">
+                      <button type="button"
                               onClick={this.handleRemoveQuestion(idx, levelIdx)}
-                              className="btn"
+                              className="w3-button w3-white"
                               style={{
                                 marginLeft: '-25px'
-                              }}>-
-                      </Button>
+                              }}>x
+                      </button>
+
                     </div>
                   </div>
                   <br/>
@@ -251,7 +267,7 @@ class QuestionAndAnswer extends Component {
                       'marginLeft': '15px',
                       'marginBottom': '10px'
                     }}>
-                      <div className="col-7">
+                      <div className="col-9">
                         <input
                           placeholder={`Answer #${key + 1}`}
                           value={value.text}
@@ -261,38 +277,41 @@ class QuestionAndAnswer extends Component {
                         />
                       </div>
                       <div className="col-3">
-                        <Button type="button"
+                        <button type="button"
                                 onClick={this.handleRemoveAnswer(idx, key, levelIdx)}
-                                className="btn"
+                                className="w3-button w3-white"
                                 style={{
                                   marginLeft: '-25px'
-                                }}>-
-                        </Button>
+                                }}>x
+                        </button>
                       </div>
                     </div>
                   ))}
                   <div className="row">
-                    <Button type="button"
+                    <button type="button"
                             onClick={() => this.handleAddAnswers(idx, levelIdx)}
-                            className="btn btn-success"
+                            className="w3-button w3-circle newAnswer"
                             style={{
-                              marginLeft: '45px',
-                              marginTop: '5px'
+                              marginLeft: '45px'
                             }}>+
-                    </Button>
+                    </button>
                   </div>
+                <br/>
                 </FormGroup>
               )).concat(
                 <Button type="button"
                         onClick={() => this.handleAddQuestions(values.length + 1, levelIdx)}
-                        className="btn btn-success"
+                        className="btn"
                         key={levelIdx + 10}
                         style={{
+                          'backgroundColor':'#17a2b8',
                           'textAlign': 'center',
-                          'margin': '5px'
+                          'marginLeft': '35%',
+                          'marginBottom': '5%'
                         }}
-                >Add
-                </Button>)
+                >New Question
+                </Button>
+              )
             ))
           }
         </Form>

@@ -55,7 +55,7 @@ class Category extends Component {
               })}
             </div>
           </div>
-          <div className="col-9">
+          <div className="col-8">
             <QuestionAndAnswer json={this.props.categories} categoryIdx={this.state.categoryIdx}/>
           </div>
         </div>
