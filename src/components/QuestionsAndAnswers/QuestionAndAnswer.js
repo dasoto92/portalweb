@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Button, Form, FormGroup} from 'reactstrap';
 import Azure from 'azure-storage';
-import axios from 'axios';
 
 //CSS
 import '../global/css/General.css';
@@ -9,10 +8,6 @@ import '../global/css/bootstrap.css';
 import PropTypes from "prop-types";
 
 // Component
-const Settings = {
-  "API_AUTH_ENDPOINTSTORAGE": "utninternship",
-  "SUBSCRIPTION_KEYSTORAGE": "h++vyiOsvkR1AYDwC8z8xG1yamdzEYKdG+SHWLLSQGdG7+SWKOHkRQ6FjpQOAmBeRUNi0pz+aTaCcBZz"
-};
 
 class QuestionAndAnswer extends Component {
   constructor(props) {
@@ -78,7 +73,6 @@ class QuestionAndAnswer extends Component {
     });
     mappedQuestionsAndAnswers[levelIdx] = selectedQuestion;
     this.setState({questions: mappedQuestionsAndAnswers});
-    //console.log("asdasd",mappedQuestionsAndAnswers[levelIdx]);
   };
 
   handleAnswerChange = (questionIdx, answerIdx, levelIdx) => (evt) => {
@@ -171,7 +165,7 @@ class QuestionAndAnswer extends Component {
   }
 
   componentWillMount() {
-    //console.log("will mount");
+    //console.log("will mount:", this.props.json.Questions.Java[0][0].text);
   }
 
   componentWillUpdate(nextProps) {
@@ -207,10 +201,10 @@ class QuestionAndAnswer extends Component {
     });
     fileService.createBlockBlobFromText('data', 'category.json', text, function (error, result, response) {
       if (!error) {
-        console.log(text);
-        console.log(response, result);
+        //console.log(text);
+        //console.log(response, result);
       } else {
-        console.log("ERROR:", error);
+        //console.log("ERROR:", error);
       }
     });
   };
@@ -223,7 +217,7 @@ class QuestionAndAnswer extends Component {
     });
     return (
       <div className="QuestionAndAnswer">
-        <Button onClick={this.saveJSON}> test </Button>
+        <Button className={"saveData btn btn-info"} onClick={this.saveJSON}> Save </Button>
         <Form onSubmit={this.handleSubmit}>
           <h4>Basic</h4>
           {
@@ -244,7 +238,7 @@ class QuestionAndAnswer extends Component {
                     <div className="col-3">
                       <Button type="button"
                               onClick={this.handleRemoveQuestion(idx, levelIdx)}
-                              className="btn btn-danger"
+                              className="btn"
                               style={{
                                 marginLeft: '-25px'
                               }}>-
@@ -269,7 +263,7 @@ class QuestionAndAnswer extends Component {
                       <div className="col-3">
                         <Button type="button"
                                 onClick={this.handleRemoveAnswer(idx, key, levelIdx)}
-                                className="btn btn-danger"
+                                className="btn"
                                 style={{
                                   marginLeft: '-25px'
                                 }}>-
@@ -301,13 +295,7 @@ class QuestionAndAnswer extends Component {
                 </Button>)
             ))
           }
-          <hr/>
-          <Button className="btn btn-info" style={{
-            'textAlign': 'center',
-            'margin': '5px'
-          }}>Save</Button>
         </Form>
-
       </div>
     );
   }
