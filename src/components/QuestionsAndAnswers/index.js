@@ -18,39 +18,42 @@ class QuestionsAndAnswers extends Component {
     super(props);
     this.state = {
       questions: {},
-      ready:false
+      ready: false
     }
   }
 
   componentDidMount() {
     if (localStorage.length < 1) {
       this.props.history.push("/login");
+    } else {
+      console.log("DID MOUNT PRUEBA");
+      this.pruebaY();
     }
-    this.pruebaY();
   }
 
   pruebaY = (evt) => {
-    const PATH = "https://utninternship.file.core.windows.net";
-    const FILE_ROOT = "/prueba/prueba.json";
-    const KEY = "?sv=2017-11-09&ss=bfqt&srt=sco&sp=rwdlacup&se=2018-09-26T07:13:12Z&st=2018-08-26T23:13:12Z&spr=https&sig=mJbFHNEqloNv6pFpsVITK6il%2FtYUb4E7B%2BJAjMkI3iU%3D";
+    const PATH = "https://utninternship.blob.core.windows.net";
+    const FILE_ROOT = "/data/category.json";
+    const KEY = "?sp=rcwd&st=2018-08-29T17:12:39Z&se=2018-09-09T01:12:39Z&spr=https&sv=2017-11-09&sig=BVlOZVfcITy6WvYjE5J3jC8fPt0ze63GHcqf6XujWh0%3D&sr=b";
 
     let result = axios.get(PATH + FILE_ROOT + KEY).then((response, error) => {
-      console.log("Response data: ", response.data);
+      console.log("Response data: ", result);
       this.setState({
         questions: response.data,
         ready: true
       })
     });
+    console.log("resuuuuuult", result);
   };
 
 
-  componentWillUpdate(nextState, nextProps){
+  componentWillUpdate(nextState, nextProps) {
     console.log("next_state", nextState, "next_props", nextProps.questions);
 
   }
 
   render() {
-    if(this.state.ready){
+    if (this.state.ready) {
       return (
         <div className="Content Body">
           <div className="row Body">
@@ -59,8 +62,8 @@ class QuestionsAndAnswers extends Component {
           </div>
         </div>
       );
-    }else{
-      return(<p>Not data found</p>)
+    } else {
+      return (<p>Not data found</p>)
     }
 
   }

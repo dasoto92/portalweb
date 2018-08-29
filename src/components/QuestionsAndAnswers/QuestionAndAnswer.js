@@ -193,100 +193,27 @@ class QuestionAndAnswer extends Component {
     //console.log("did update" , prevProps, prevState);
   }
 
-  createAzureFile() {
-    let fileService = Azure.createFileService("DefaultEndpointsProtocol=https;AccountName=utninternship;AccountKey=2xamaeMMLaevFI3u+6vHKxKlfwbl2r9PucTOoeb48I6/31FCuQlzYqxHEyaPiYN7NjEm26i871gIuPlChDYrWA==;EndpointSuffix=core.windows.net");
-    let text = "asdqweqweqwe";
-
-    fileService.createFileFromText( 'prueba', '', 'taskfilesssss.txt', text, function(error, result, response) {
-      if (!error) {
-        console.log(response, result);
-      }else{
-        console.log("ERROR:", error);
-      }
-    });
-
-    /*
-    const streams = new Uint8Array(file.output('arraybuffer'));
-    const fileStream = new stream.Readable();
-    fileStream.push(streams);
-    fileStream.push(null);
-    fileService.createFileFromStream(this.shared, this.directory + '/' + this.fileName, 'interview.pdf', fileStream, streams.length, function (error, result, response) {
-      if (!error) {
-        console.log('file uploaded');
-      }
-    });
-*/
-  }
-
-  pruebaX = (evt) => {
-    let fileService = Azure.createFileService("DefaultEndpointsProtocol=https;AccountName=utninternship;AccountKey=2xamaeMMLaevFI3u+6vHKxKlfwbl2r9PucTOoeb48I6/31FCuQlzYqxHEyaPiYN7NjEm26i871gIuPlChDYrWA==;EndpointSuffix=core.windows.net");
-    /*let json = {
-      "Basic": [
-        {
-          "number": "1",
-          "text": "pregunta 1",
-          "extra": {
-            "video": "?",
-            "img": "?"
-          },
-          "answers": [{"text": "respuesta 1"}]
-        },
-        {
-          "number": "2",
-          "text": "pregunta 2",
-          "extra": {
-            "video": "?",
-            "img": "?"
-          },
-          "answers": [{"text": "basic answer pregunta 2"}, {"text": "basic answer pregunta 3"}]
-        }
-      ],
-      "Intermediate": [
-        {
-          "number": "1",
-          "text": "Int pregunta 1",
-          "extra": {
-            "video": "?",
-            "img": "?"
-          },
-          "answers": [{"text": "Int respuesta 1"}]
-        },
-        {
-          "number": "2",
-          "text": "Int pregunta 2",
-          "extra": {
-            "video": "?",
-            "img": "?"
-          },
-          "answers": [{"text": "int answer pregunta 2"}, {"text": "int answer pregunta 3"}]
-        }
-      ]
-    };*/
- let json=this.state.json;
+  saveJSON = () => {
+    let fileService = Azure.createBlobService("DefaultEndpointsProtocol=https;AccountName=utninternship;AccountKey=h++vyiOsvkR1AYDwC8z8xG1yamdzEYKdG+SHWLLSQGdG7+SWKOHkRQ6FjpQOAmBeRUNi0pz+aTaCcBZz/lfDPw==;EndpointSuffix=core.windows.net");
+    let json = this.state.json;
     let newArray = [];
     Object.keys(json.Questions).forEach(function (key) {
-      newArray.push({"value":key});
+      newArray.push({"value": key});
     });
-    json.Questions[newArray[this.state.categoryIndex].value]=this.state.questions;
-
+    json.Questions[newArray[this.state.categoryIndex].value] = this.state.questions;
     let text = JSON.stringify(this.state.json);
     this.setState({
-      json:json
+      json: json
     });
-    //console.log(this.state.json);
-
-    fileService.createFileFromText( 'prueba', '', 'prueba.json', text, function(error, result, response) {
+    fileService.createBlockBlobFromText('data', 'category.json', text, function (error, result, response) {
       if (!error) {
         console.log(text);
         console.log(response, result);
-      }else{
+      } else {
         console.log("ERROR:", error);
       }
     });
-
-
   };
-
 
   render() {
     let mappedQuestionsAndAnswers = [];
@@ -294,13 +221,9 @@ class QuestionAndAnswer extends Component {
       mappedQuestionsAndAnswers.push(value);
       return mappedQuestionsAndAnswers;
     });
-    //console.log(this.state.questions.Basic);
-
-    //console.log(mappedQuestionsAndAnswers);
-
     return (
       <div className="QuestionAndAnswer">
-        <Button onClick={this.pruebaX}> test </Button>
+        <Button onClick={this.saveJSON}> test </Button>
         <Form onSubmit={this.handleSubmit}>
           <h4>Basic</h4>
           {
@@ -310,7 +233,6 @@ class QuestionAndAnswer extends Component {
                   <div className="row">
                     <p>{idx + 1}</p>
                     <div className="col-8">
-
                       <input
                         placeholder={`Question #${idx + 1}`}
                         value={value.text}
@@ -336,9 +258,6 @@ class QuestionAndAnswer extends Component {
                       'marginBottom': '10px'
                     }}>
                       <div className="col-7">
-                        {
-                          /*console.log("IDX: ",idx, "KEY:",key, "LVLIDX",levelIdx)*/
-                        }
                         <input
                           placeholder={`Answer #${key + 1}`}
                           value={value.text}

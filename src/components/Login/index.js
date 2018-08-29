@@ -43,9 +43,16 @@ class Login extends Component {
   };
 
   handleGetCredentials() {
-    const PATH = "https://utninternship.file.core.windows.net";
+    //const PATH = "https://utninternship.file.core.windows.net";
+    //const FILE_ROOT = "/prueba/credentials.txt";
+    //const KEY = "?sv=2017-11-09&ss=bfqt&srt=sco&sp=rwdlacup&se=2018-09-26T07:13:12Z&st=2018-08-26T23:13:12Z&spr=https&sig=mJbFHNEqloNv6pFpsVITK6il%2FtYUb4E7B%2BJAjMkI3iU%3D";
+    const PATH = "https://utninternship.blob.core.windows.net";
     const FILE_ROOT = "/prueba/credentials.txt";
-    const KEY = "?sv=2017-11-09&ss=bfqt&srt=sco&sp=rwdlacup&se=2018-09-26T07:13:12Z&st=2018-08-26T23:13:12Z&spr=https&sig=mJbFHNEqloNv6pFpsVITK6il%2FtYUb4E7B%2BJAjMkI3iU%3D";
+    const KEY = "?sp=r&st=2018-08-29T17:04:18Z&se=2018-09-09T01:04:18Z&spr=https&sv=2017-11-09&sig=SB%2F3SnK275BVfSnRpMmSPqh3o59G%2FMVpY1lnP1e9pGI%3D&sr=b";
+
+
+
+
 
     let result = axios.get(PATH + FILE_ROOT + KEY).then(response => {
       result = response.data.split(';');
