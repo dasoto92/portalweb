@@ -113,9 +113,8 @@ class Login extends Component {
       <div className="LoginContainer">
         <Form className={"loginForm"}>
           <Input
-            className={shouldMarkError('username') ? "error" : ""}
+            className={"loginField "+shouldMarkError('username') ? "error" : ""}
             type="text/email"
-            id={"loginField"}
             placeholder="Enter username"
             value={this.state.username}
             onChange={this.handleUsernameChange}
@@ -123,8 +122,7 @@ class Login extends Component {
           />
           <br/>
           <Input
-            className={shouldMarkError('password') ? "error" : ""}
-            id={"loginField"}
+            className={"loginField "+shouldMarkError('password') ? "error" : ""}
             type="password"
             placeholder="Enter password"
             value={this.state.password}
