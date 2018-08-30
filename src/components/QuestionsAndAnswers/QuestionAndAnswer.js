@@ -1,13 +1,12 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import {Button, Form, FormGroup} from 'reactstrap';
 import Azure from 'azure-storage';
+import {withAlert} from 'react-alert'
 
 //CSS
 import '../global/css/General.css';
 import '../global/css/bootstrap.css';
 import PropTypes from "prop-types";
-
-// Component
 
 class QuestionAndAnswer extends Component {
   constructor(props) {
@@ -183,11 +182,9 @@ class QuestionAndAnswer extends Component {
   }
 
   componentDidUpdate(currentProps, currentState) {
-    //console.log("did update", this.state.categoryIndex);
-    //console.log("did update" , prevProps, prevState);
   }
 
-  saveJSON = () => {
+  saveJSON = (t) => {
     let fileService = Azure.createBlobService("DefaultEndpointsProtocol=https;AccountName=utninternship;AccountKey=h++vyiOsvkR1AYDwC8z8xG1yamdzEYKdG+SHWLLSQGdG7+SWKOHkRQ6FjpQOAmBeRUNi0pz+aTaCcBZz/lfDPw==;EndpointSuffix=core.windows.net");
     let json = this.state.json;
     let newArray = [];
@@ -201,10 +198,9 @@ class QuestionAndAnswer extends Component {
     });
     fileService.createBlockBlobFromText('data', 'category.json', text, function (error, result, response) {
       if (!error) {
-        //console.log(text);
-        //console.log(response, result);
+        t.props.alert.success('Data saved successfully');
       } else {
-        //console.log("ERROR:", error);
+        t.props.alert.success('Error, server did not respond');
       }
     });
   };
@@ -231,14 +227,15 @@ class QuestionAndAnswer extends Component {
     });
     return (
       <div className="QuestionAndAnswer">
-        <div className={"saveData"}><Button  onClick={this.saveJSON}> Save </Button></div>
-
+        <Fragment>
+          <div className={"saveData"}><Button onClick={()=>this.saveJSON(this)}> Save </Button></div>
+        </Fragment>
         <Form className={"formQuestions"} onSubmit={this.handleSubmit}>
           {
             mappedQuestionsAndAnswers.map((values, levelIdx) => (
               values.map((value, idx) => (
                 <FormGroup key={idx + 100}>
-                  {QuestionAndAnswer.levelDiff(levelIdx,idx)}
+                  {QuestionAndAnswer.levelDiff(levelIdx, idx)}
                   <div className="row">
                     <p className={"questionNumber"}>{idx + 1}</p>
                     <div className="col-10">
@@ -258,7 +255,6 @@ class QuestionAndAnswer extends Component {
                                 marginLeft: '-25px'
                               }}>x
                       </button>
-
                     </div>
                   </div>
                   <br/>
@@ -296,7 +292,7 @@ class QuestionAndAnswer extends Component {
                             }}>+
                     </button>
                   </div>
-                <br/>
+                  <br/>
                 </FormGroup>
               )).concat(
                 <Button type="button"
@@ -304,7 +300,7 @@ class QuestionAndAnswer extends Component {
                         className="btn"
                         key={levelIdx + 10}
                         style={{
-                          'backgroundColor':'#17a2b8',
+                          'backgroundColor': '#17a2b8',
                           'textAlign': 'center',
                           'marginLeft': '35%',
                           'marginBottom': '5%'
@@ -326,4 +322,4 @@ QuestionAndAnswer.propTypes = {
   categoryIndex: PropTypes.number
 };
 
-export default QuestionAndAnswer;
+export default withAlert(QuestionAndAnswer);

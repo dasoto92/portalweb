@@ -79,8 +79,8 @@ class Table extends Component {
           name = name[0].split('.');
           dataArray.push(
             <Panel
-              header={`Name: ${name[0].toLocaleUpperCase() + " " + name[1].toLocaleUpperCase()} / Email: ${value.value}`}
-              key={key}>
+              header={"Name:"+ name[0].toLocaleUpperCase() + " " + name[1].toLocaleUpperCase() + " / Email: " +value.value}
+              key={key} >
               <div>
                 <table className="table table-hover ">
                   <thead>
