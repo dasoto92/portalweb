@@ -87,7 +87,7 @@ class Table extends Component {
                   <tr>
                     <th>Category</th>
                     <th>Date</th>
-                    <th>Interview</th>
+                    <th>Interview Doc</th>
                     <th>Interview Video</th>
                   </tr>
                   </thead>
