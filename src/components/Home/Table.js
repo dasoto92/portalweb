@@ -9,6 +9,7 @@ import TextModal from './TextModal'
 import Collapse, {Panel} from 'rc-collapse';
 
 let dataArray = [];
+let htmlArray = [];
 
 class Table extends Component {
 
@@ -74,8 +75,12 @@ class Table extends Component {
           fold = new XMLParser().parseFromString(response.data);
           fold = fold.getElementsByTagName('Name');
           result[key].children = fold;
+          let name = value.value.split('@');
+          name = name[0].split('.');
           dataArray.push(
-            <Panel header={`Employee Email: ${value.value}`} key={key}>
+            <Panel
+              header={`Name: ${name[0].toLocaleUpperCase() + " " + name[1].toLocaleUpperCase()} / Email: ${value.value}`}
+              key={key}>
               <div>
                 <table className="table table-hover ">
                   <thead>
@@ -107,6 +112,14 @@ class Table extends Component {
           this.setState({
             names: result
           });
+          htmlArray = [];
+          for (let i = 0; i < dataArray.length; i++) {
+            for (let y = 0; y < dataArray.length; y++) {
+              if (dataArray[y].key === i.toString()) {
+                htmlArray.push(dataArray[y]);
+              }
+            }
+          }
           this.forceUpdate();
         });
         return true
@@ -120,7 +133,7 @@ class Table extends Component {
         <Collapse
           accordion={true}
         >
-          {dataArray}
+          {htmlArray}
         </Collapse>
       </div>)
   }
