@@ -17,7 +17,6 @@ const options = {
   position: "top center"
 };
 
-
 ReactDOM.render(
   <Provider template={AlertTemplate} {...options}>
     <Router>

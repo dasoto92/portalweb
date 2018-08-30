@@ -7,6 +7,7 @@ import '../global/css/General.css';
 // Component
 import LeftMenu from '../global/LeftMenu'
 import Category from './Category'
+import HiddenMenu from '../global/HiddenMenu'
 
 // Data
 import items from '../../data/menu';
@@ -62,8 +63,9 @@ class QuestionsAndAnswers extends Component {
     if (this.state.ready) {
       return (
         <div className="Content Body">
+          <HiddenMenu hid={"dropCat"}/>
           <div className="row Body">
-            <div className="col-3"><LeftMenu items={items} index={1}/></div>
+            <div className="col-2 menuContainerCat"><LeftMenu items={items} index={1}/></div>
             <div className="col-9"><Category categories={this.state.questions}/></div>
           </div>
         </div>

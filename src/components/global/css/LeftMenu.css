@@ -1,6 +1,7 @@
 .vertical-menu {
     width: 200px; /* Set a width if you like */
     position: fixed;
+    margin-left: -15px;
 }
 
 .vertical-menu a {
@@ -24,6 +25,7 @@
 .vertical-menu-categories {
     width: 200px; /* Set a width if you like */
     position: fixed;
+    margin-left: 1%;
 }
 
 .vertical-menu-categories a {
@@ -48,3 +50,28 @@
     color: white;
     text-align: center;
 }
+
+@media (max-width: 940px) {
+    .menuContainer{
+        display:none
+    }
+    .drop{
+        display: block;
+    }
+
+}
+
+.dropCat{
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .menuContainerCat{
+        display:none
+    }
+    .dropCat{
+        display: block;
+    }
+
+}
+

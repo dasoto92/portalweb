@@ -6,7 +6,7 @@ import '../global/css/General.css';
 // Component
 import Table from './Table'
 import LeftMenu from '../global/LeftMenu'
-
+import HiddenMenu from '../global/HiddenMenu'
 // Data
 import items from '../../data/menu';
 
@@ -37,9 +37,10 @@ class Home extends Component {
     return (
       <div>
         <div className="Content Body">
-          <div className="row Body">
-            <div className="col-3"><LeftMenu items={items} index={0}/></div>
-            <div className="col-8">
+          <HiddenMenu hid={"drop"}/>
+          <div className="row ">
+            <div className="col-3 menuContainer"><LeftMenu items={items} index={0}/></div>
+            <div className="col-9 ">
               {Home.handleLoadTable()}
             </div>
           </div>

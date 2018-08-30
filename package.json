@@ -15,6 +15,7 @@
     "react-alert": "^4.0.4",
     "react-alert-template-basic": "^1.0.0",
     "react-bootstrap": "^0.32.3",
+    "react-bootstrap-dropdown-menu": "^1.1.15",
     "react-chartjs": "^1.2.0",
     "react-charts": "^1.0.10",
     "react-collapsible-component": "^1.1.0",
