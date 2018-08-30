@@ -65,8 +65,8 @@ class QuestionsAndAnswers extends Component {
         <div className="Content Body">
           <HiddenMenu hid={"dropCat"}/>
           <div className="row Body">
-            <div className="col-2 menuContainerCat"><LeftMenu items={items} index={1}/></div>
-            <div className="col-9"><Category categories={this.state.questions}/></div>
+            <div className="col-sm-1 col-md-2 col-lg-2 menuContainerCat"><LeftMenu items={items} index={1}/></div>
+            <div className="col-xs-8 col-sm-9 col-md-9 col-lg-9"><Category categories={this.state.questions}/></div>
           </div>
         </div>
       );

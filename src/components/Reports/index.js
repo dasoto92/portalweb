@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Chart, Axis, Series, Tooltip, Cursor, Bar} from "react-charts";
 
-
 //CSS
 import '../global/css/General.css';
 
@@ -58,9 +57,9 @@ class Reports extends Component {
         <HiddenMenu hid={"drop"}/>
         <div className="row Body">
           <div className="col-2 menuContainer"><LeftMenu items={items} index={2}/></div>
-          <div className="col-10">
+          <div className="col-xs-4 col-sm-8 col-md-9 col-lg-9" >
             <div className={"chart chartStyle"}>
-              <h2>Sort by Days</h2>
+              <h2 className={"chartTitle"}>Sort by Days</h2>
               <Chart data={data}>
                 <Axis primary type="ordinal"/>
                 <Axis type="linear" min={0} max={0} stacked/>
@@ -70,9 +69,10 @@ class Reports extends Component {
                 <Tooltip/>
               </Chart>
             </div>
-            <br/><br/>
+            <br/><br/><br/><br/>
             <div className={"chart chartStyle"}>
-              <h2>Sort by Languages</h2>
+              <br/>
+              <h2 className={"chartTitle"}>Sort by Languages</h2>
               <Chart data={category}>
                 <Axis primary type="ordinal" position="left"/>
                 <Axis type="linear" stacked position="bottom"/>

@@ -1,5 +1,5 @@
 .Header {
-  position: static;
+  position: fixed;
   background-color: #222;
   height: 110px;
   padding: 20px;
@@ -16,9 +16,9 @@
 }
 
 .Content{
-  height: auto;
+    margin-top: 10%;
   width: 100%;
-  padding-top: 2%;
+
   position: fixed;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .Footer {
-  position: fixed;
+position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -48,7 +48,7 @@
 
 .Body {
   overflow-y: auto;
-  height: 88%;
+  height: 78%;
   width: 100%;
   position: absolute;
 }
@@ -94,7 +94,7 @@ input[type=text]:focus {
 }
 
 .saveData{
-  margin-left: 42%;
+  margin-left: 45%;
   position: fixed;
   color: rgb(47,45,70);
 }
@@ -160,8 +160,8 @@ input[type=text]:focus {
 }
 
 .chartStyle{
-    width: 80%;
-    margin: auto;
+    height: 80%;
+    margin-left: 5%;
 }
 
 .drop{
@@ -169,3 +169,12 @@ input[type=text]:focus {
     margin-left: 2%;
 }
 
+.chartTitle{
+    margin-bottom: 20px;
+    color: rgb(47,45,70);
+}
+
+
+.questions{
+    margin-left: 35%;
+}

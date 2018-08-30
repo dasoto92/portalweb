@@ -48,18 +48,18 @@ class Category extends Component {
     return (
       <div className="Category">
         <div className="row">
-          <div className="col-3">
-            <div className="vertical-menu-categories">
+            <div className="vertical-menu-categories col-xs-2 col-sd-2 col-md-3 col-lg-3">
               {newArray.map((item, key) => {
                 return <a onClick={() => this.onClick(key)} id={(key + 1) * 100} key={key}>{item}</a>
               })}
             </div>
-          </div>
-          <div className="col-8">
+
+          <div className="questions col-xs-10 col-sd-10 col-md-9 col-lg-9">
             <QuestionAndAnswer json={this.props.categories} categoryIdx={this.state.categoryIdx}/>
           </div>
         </div>
-      </div>
+        </div>
+
     );
   }
 }

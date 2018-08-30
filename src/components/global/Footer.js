@@ -3,9 +3,9 @@ import './css/General.css';
 
 export const Footer = () => {
   return (
-    <div className="Footer">
+    <footer className="page-footer Footer">
       <p>Copyright© 2018 Avantica</p>
-    </div>
+    </footer>
   );
 };
 

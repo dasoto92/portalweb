@@ -8,10 +8,7 @@ import '../global/css/General.css';
 
 class HiddenMenu extends Component {
 
-constructor(props){
-  super(props);
-  console.log(this.props)
-}
+
   render() {
     return (
       <div className={this.props.hid}>
