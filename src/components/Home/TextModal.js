@@ -15,13 +15,16 @@ const customStyles = {
   }
 };
 
+let URL = "";
+
 class Video_Modal extends Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
-      modalIsOpen: false
+      modalIsOpen: false,
+      name: ""
     };
 
     this.openModal = this.openModal.bind(this);
@@ -36,9 +39,18 @@ class Video_Modal extends Component {
     this.setState({modalIsOpen: false});
   }
 
-  render() {
-    let pdfURL = "https://interviewbotstorage.file.core.windows.net/interviews/pcass78@gmail.com/Test_7_4_2018_23_20_18/interview.pdf?sv=2017-11-09&ss=bfqt&srt=sco&sp=rwdlacup&se=2018-12-06T10:06:04Z&st=2018-08-25T02:06:04Z&spr=https&sig=5AGJ1NaX6JM97J167OUqXqWme3k1cLyvS%2Fu5wUqfKo4%3D";
+  validateVideo() {
+    if (this.props.name === "ReactNative") {
+      URL = "https://utninternship.blob.core.windows.net/media/reactnative.pdf?sp=r&st=2018-08-30T03:53:04Z&se=2018-09-08T11:53:04Z&spr=https&sv=2017-11-09&sig=RoSbhtFhigJbMm4VuTTOgin0yJ%2FD0IIzgS5SxdwN%2Fp0%3D&sr=b";
+    } else if (this.props.name === "CSS") {
+      URL = "https://utninternship.blob.core.windows.net/media/css.pdf?sp=r&st=2018-08-30T03:57:07Z&se=2018-09-08T11:57:07Z&spr=https&sv=2017-11-09&sig=B58nT4chpA9xWAzf%2B8W8MkSr2vl6NEBieHLya5fhXsw%3D&sr=b";
+    } else {
+      URL = "https://utninternship.blob.core.windows.net/media/interview.pdf?sp=r&st=2018-08-30T03:55:02Z&se=2018-09-08T11:55:02Z&spr=https&sv=2017-11-09&sig=KlmTZh2Qd30%2BbeQHPLXcIQRuudNlBAbrTtDeKq84vGo%3D&sr=b";
+    }
+  }
 
+  render() {
+    this.validateVideo();
     return (
       <div>
         <a onClick={this.openModal} href="\#">Document (.pdf)</a>
@@ -50,7 +62,7 @@ class Video_Modal extends Component {
           contentLabel="Example Modal"
           ariaHideApp={false}
         >
-          <embed src={pdfURL} width="800px" height="800px"/>
+          <embed src={URL} width="800px" height="800px"/>
         </Modal>
       </div>
     );
